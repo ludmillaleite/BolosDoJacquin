@@ -1,37 +1,41 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Bellota", system-ui;
+}
+body{
+    background-color: #fff6e8;
 }
 
-header{
-    background-color:#ffd188;
-    height: 100;
+header {
+    background-color: #ffd188;
+    height: 100px;
 }
 
-.container_cabecalho{
+.container_cabecalho {
     display: flex;
     justify-content: space-between;
     width: 90%;
     max-width: 1440px;
-    background-color: aquamarine;
+   /* background-color: aquamarine; */
     margin: 0 auto;
     height: 100%;
     align-items: center;
 }
 
-.icone_home{
-    height: 50px; 
+.icone_home {
+    height: 50px;
 }
 
-.box_busca{
+.box_busca {
     position: relative;
     width: 60%;
     max-width: 500px;
     margin: 0 10px;
 }
 
-.icone_lupa{
+.icone_lupa {
     height: 24px;
     position: absolute;
     left: 9px;
@@ -39,21 +43,21 @@ header{
     fill: #b0b0b0;
 }
 
-.logo{
+.logo {
     height: 60px;
 }
 
-.campo_busca{
+.campo_busca {
     width: 100%;
     height: 42px;
     border-radius: 10px;
     border: solid 1px #cccccc;
     padding-left: 2.5rem;
-    font-family: "Bellota", system-ui;
+
     font-size: 1rem;
 }
 
-.banner{
+.banner {
     background-image: url(./assets/imgs/banner.png);
     width: 100%;
     aspect-ratio: 3.2;
@@ -61,13 +65,13 @@ header{
     background-size: cover;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.titulo{
+.titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,11 +79,11 @@ header{
     /*background-color: blueviolet;*/
 }
 
-.titulo span{
+.titulo span {
     font-size: 48px;
 }
 
-.titulo hr{
+.titulo hr {
     width: 300px;
     height: 4px;
     border: none;
@@ -87,7 +91,7 @@ header{
     background-color: #ffd188;
 }
 
-.acessivel{
+.acessivel {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -95,3 +99,69 @@ header{
     clip-path: inset(50%);
     white-space: nowrap;
 }
+
+
+
+
+/* CARDS */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-align: center;
+
+    display: flex; /* coloca automaticamente na horizontal */
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 4px 2px #00000025 ;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card p,
+.card span{
+    font-size: 18px;
+    width: 90%;
+}
+
+.whatsapp{
+    position: fixed; /* fixed= exclusivamente para deiar fixo na tela*/
+    right: 30px;
+    bottom: 30px;
+    transition: transform 0.5s ease-in-out,
+                filter 0.5s ease-in-out;
+}
+
+.whatsapp img{
+    width: 80px;
+    filter: drop-shadow(0 5px 1px #00000025);
+}
+
+.whatsapp:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 10px 2px #00000025);
+}
+
+.rodape{
+    width: 100%;
+    height: 60px;
+    background-color: #ffd188;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-family: "Julius Sans One", sans-serif;
+} 
