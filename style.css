@@ -138,7 +138,7 @@ header {
 }
 
 .whatsapp{
-    position: fixed; /* fixed= exclusivamente para deiar fixo na tela*/
+    position: fixed; /* fixed= exclusivamente para deixar fixo na tela*/
     right: 30px;
     bottom: 30px;
     transition: transform 0.5s ease-in-out,

@@ -28,7 +28,7 @@ body{
 .secao_logo{
     display: flex;
     flex-direction: column;
-    width:360px;
+    width: 360px;
     justify-content: space-between;
     align-items: center;
 }
@@ -51,19 +51,21 @@ body{
 }
 
 .card{
-    margin: 50px 0;
     height: 360px;
-    text-decoration: none;
+    width: 260px;
     color: #ffffff;
+    border-radius: 25px;
+    text-align: center;
+
+    text-decoration: none;
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
-    padding: 10px 10px 40px 10px;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 10px 40px 10px;
     font-size: 20px;
+    margin: 50px 0;
     box-shadow: 0 0 40px 2px #00000075;
-    width: 260px;
 }
 
 .card_cacau{
@@ -99,8 +101,12 @@ body{
     width: 140px;
 }
 
+.card svg{
+    width: 140px;
+}
+
 .whatsapp{
-    position: fixed; /* fixed= exclusivamente para deixar fixo na tela*/
+    position: fixed; /* fixed= exclusivamente para deiar fixo na tela*/
     right: 30px;
     bottom: 30px;
     transition: transform 0.5s ease-in-out,
@@ -132,26 +138,19 @@ footer p{
 }
 
 
-
-
-
-
-
-
 /*MEDIA*/
 @media screen and (max-width: 1050px) {
     .main_home{
         flex-direction: column;
         align-items: center;
-        width: 95%;
     }
-    
+
     .secao_logo{
         position: relative;
         margin-top: 50px;
     }
 
-    .secao_logo svg{
+     .secao_logo svg{
         position: absolute;
         top: 230px;
         background-color: #ffd188;
@@ -167,5 +166,4 @@ footer p{
     .secao_cards{
         width: 100%;
     }
-
 }
